@@ -32,8 +32,9 @@ To download and install MuPOD
 git clone --recursive https://github.com/WilbertJiang/MuPOD.git
 ```
 # How to Install MuPOD and Run MuPOD Step by Step
-**1. Dependencies**:
+## 1. Dependencies
 MuPOD is developed on the FEniCS platform, which provides a flexible framework for solving partial differential equations (PDEs) using finite element methods. FEniCS should be pre-installed using the following command:  
+### FEniCS install
 ```
 sudo apt-get install --no-install-recommends software-properties-common  
 sudo add-apt-repository ppa:fenics-packages/fenics  
@@ -41,8 +42,21 @@ sudo apt-get update
 sudo apt-get install fenics
 ```
 Please refer to the FEniCS installation guide for more detailed instructions on installation and troubleshooting: [FEniCS download](https://fenicsproject.org/download/.).
+### Building tools installation   
+To run the C++ version FEniCS, you need to make sure that the build tools are installed
+```
+sudo apt install cmake make g++ -y
+```
+### C++ FEniCS installation
+If the cmake are installed on your server, you can then run the following commands to install C++ version FEniCS
+```
+sudo apt-get install --no-install-recommends software-properties-common
+sudo add-apt-repository ppa:fenics-packages/fenics
+sudo apt-get update
+sudo apt-get install --no-install-recommends fenics
+```
 
-**2. Training data collection**:
+## 2. Training data collection
 The temperature data required for training an individual POD model in MuPOD can be obtained through either experimental measurements or numerical simulations. For example, the finite element method (FEM) implemented in  [FEniCS](https://fenicsproject.org/), which is used in [PODTherm-GP](https://github.com/WilbertJiang/PODTherm_GP), can also be employed to generate the training data for MuPOD. 
 
 This can be done by navigating to the home folder of PODTherm-GP and running the following command:
@@ -63,19 +77,7 @@ where 20 is the number of processes.
 
 
 
-**Building tools installation**:   
-To run the C++ version FEniCS, you need to make sure that the build tools are installed
-```
-sudo apt install cmake make g++ -y
-```
-**C++ FEniCS installation**:  
-If the cmake are installed on your server, you can then run the following commands to install C++ version FEniCS
-```
-sudo apt-get install --no-install-recommends software-properties-common
-sudo add-apt-repository ppa:fenics-packages/fenics
-sudo apt-get update
-sudo apt-get install --no-install-recommends fenics
-```
+
 
 # POD Model Training
 The entire training process of PODTherm-GP includes three steps.  
