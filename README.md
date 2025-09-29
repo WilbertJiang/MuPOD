@@ -1,18 +1,18 @@
 # Welcome to MuPOD!
 MuPOD is a data-driven thermal simulator that can be dynamically reorganized to adapt to variations in chip floorplans.
-This `README.md` provides step-by-step guidance on installing and using MuPOD. The simulator can be seamlessly integrated into EDA toolchains as an efficient and accurate thermal model. If you use any component of MuPOD in your work, please cite:
-
-```
-[1] L. Jiang, A. Dowling, Y. Liu and M. -C. Cheng, "Chip-level thermal simulation for a multicore processor using a multi-block model enabled by proper orthogonal decomposition"
-ITherm (2022), p. 2022
-```
-This work also win the best paper 
+This `README.md` provides step-by-step guidance on installing and using MuPOD. The simulator can also be seamlessly integrated into EDA toolchains as an efficient and accurate thermal model.
+This work was recognized with the Prof. Avram Bar-Cohen Best Paper Award at ITherm 2022.
 
 <p align="center">
   <img src="/Image/BPA.jpg" alt="Best Paper Award" width="600">
 </pr>
 
+If you use any component of MuPOD in your work, please cite:
 
+```
+[1] L. Jiang, A. Dowling, Y. Liu and M. -C. Cheng, "Chip-level thermal simulation for a multicore processor using a multi-block model enabled by proper orthogonal decomposition"
+ITherm (2022), p. 2022
+```
 
 
 # Overview
