@@ -97,6 +97,7 @@ With the generated individual POD models, a thermal model can be dynamically con
 ```
 Using this command, 
 And then, the POD models can be dynamically assembled with the variations of floorplan 
-"./Construct/run2.sh"
-
+```
+./Construct/run2.sh
+```
 
