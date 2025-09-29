@@ -18,16 +18,13 @@ ITherm (2022), p. 2022
 # Overview
 MuPOD combines Proper Orthogonal Decomposition (POD) with domain decomposition:
 
-**Partitioning into Blocks**:
+**1. Partitioning into Blocks**:
+The chip is divided into smaller building blocks (cores, caches, I/O, memory, etc.) based on its floorplan. Each block is simulated individually with a high-resolution FEM tool [FEniCS](https://fenicsproject.org/).
 
-The chip is divided into smaller building blocks (cores, caches, I/O, memory, etc.) based on its floorplan. Each block is simulated individually with a high-resolution FEM tool (FEniCS).
-
-**Training POD Modes**:
-
+**2. Training POD Modes**:
 For each block, dynamic thermal data is collected under varying power and boundary conditions. POD extracts a small set of basis functions (modes) capturing most of the thermal behavior. These modes form a reduced-order model (ROM) for the block.
 
-**Dynamically Assembling the Multi-Block Model**:
-
+**3. Dynamically Assembling the Multi-Block Model**:
 Block-level POD models are combined into a chip-level simulator for the entire chip. At block interfaces, the discontinuous Galerkin (DG) method enforces thermal continuity by balancing temperature and heat flux across boundaries.
 
 
