@@ -32,7 +32,10 @@ To download and install MuPOD
 git clone --recursive https://github.com/WilbertJiang/MuPOD.git
 ```
 # How to Install MuPOD and Run MuPOD Step by Step
-MuPOD includes several components and each C++ component can be compiled in its folder by the following  
+**1. Training data collection**:
+The temperature data required for training an individual POD model in MuPOD can be obtained through either experimental measurements or numerical simulations. For example, the finite element method (FEM) implemented in  [FEniCS](https://fenicsproject.org/)
+, which is used in [PODTherm-GP](https://github.com/WilbertJiang/PODTherm_GP), can also be employed to generate the training data for MuPOD.
+
 ```
     cd ./src  
     ffc -l dolfin Space.ufl  
