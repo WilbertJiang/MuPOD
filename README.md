@@ -89,7 +89,7 @@ Or, just run
 ```
 ./generate_mode.sh
 ```
-
+Once this command is done, an individual POD model is generated for each building block, including the thermal conductance matrix: **G**, thermal capacitance matrix: **C**, and power density in POD space: **P**
 ## 4. Dynamically Assembling
 
 
