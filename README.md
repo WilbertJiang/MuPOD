@@ -1,6 +1,6 @@
 # Welcome to MuPOD!
-MuPOD is a data-learning based thermal simulator without any assumptions, which can offer 3D dynamic thermal simulations of semiconductor chips accurately and efficiently. 
-This `README.md` provides tutorial-like details on how to install and use PODTherm-GP. It can be further integrated into the performance-power-thermal simulation toolchains as a thermal model. If you use any component of PODTherm-GP, please cite:
+MuPOD is a data-driven thermal simulator that can be dynamically reorganized to adapt to variations in chip floorplans.
+This `README.md` provides step-by-step guidance on installing and using MuPOD. The simulator can be seamlessly integrated into EDA toolchains as an efficient and accurate thermal model. If you use any component of MuPOD in your work, please cite:
 
 ```
 [1] L. Jiang, Y. Liu and M. -C. Cheng, "Fast Accurate Full-Chip Dynamic Thermal Simulation with Fine Resolution Enabled by a Learning 
