@@ -9,7 +9,7 @@ ITherm (2022), p. 2022
 This work also win the best paper 
 
 <p align="center">
-  <img src="Workflow_PODTherm-GP.png" alt="Workflow of PODTherm-PG" width="600">
+  <img src="/Image/BPA.jpg" alt="Best Paper Award" width="600">
 </pr>
 
 
