@@ -16,6 +16,27 @@ ITherm (2022), p. 2022
 
 
 # Overview
+MuPOD combines Proper Orthogonal Decomposition (POD) with domain decomposition:
+
+**Partitioning into Blocks**:
+
+The chip is divided into smaller building blocks (cores, caches, I/O, memory, etc.) based on its floorplan. Each block is simulated individually with a high-resolution FEM tool (FEniCS).
+
+**Training POD Modes**:
+
+For each block, dynamic thermal data is collected under varying power and boundary conditions. POD extracts a small set of basis functions (modes) capturing most of the thermal behavior. These modes form a reduced-order model (ROM) for the block.
+
+**Dynamically Assembling the Multi-Block Model**:
+
+Block-level POD models are combined into a chip-level simulator for the entire chip. At block interfaces, the discontinuous Galerkin (DG) method enforces thermal continuity by balancing temperature and heat flux across boundaries.
+
+
+
+
+
+
+
+
 PODTherm-GP is enabled by the proper orthogonal decomposition (POD), which projects the physical domain of processors onto the POD space represented by a finite set of basis functions (also called POD modes). In addition, the physical principle is also incorporated into PODTherm-GP via the Galerkin projection (GP), which provides a physical guidance to thermal simulations. The results show that PODTherm-GP is able to offer dynamic temperature solutions efficiently and accurately within and beyond training range.  The whole workflow of this approach constitutes the training of PODTherm-GP and its demonstration as shown in the below figure where [Gem5](https://www.gem5.org/) and [McPAT](https://code.google.com/archive/p/mcpat/) are CPU and power simulators, respectively. The detailed information can be found in [ISCAS2022](https://ieeexplore.ieee.org/abstract/document/9937274).
 
 
