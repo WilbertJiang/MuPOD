@@ -95,7 +95,7 @@ With the generated individual POD models, a thermal model can be dynamically con
 ```
 ./run.sh
 ```
-Using this command, 
+This command computes the POD parameters at the interfaces of individual POD models, enabling their dynamic assembly into the thermal model of the entire chip.
 And then, the POD models can be dynamically assembled with the variations of floorplan 
 ```
 ./Construct/run2.sh
