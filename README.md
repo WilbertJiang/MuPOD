@@ -1,7 +1,7 @@
 # Welcome to MuPOD!
 MuPOD is a data-driven thermal simulator that can be dynamically reorganized to adapt to variations in chip floorplans.
 This `README.md` provides step-by-step guidance on installing and using MuPOD. The simulator can also be seamlessly integrated into EDA toolchains as an efficient and accurate thermal model.
-This work was recognized with the Prof. Avram Bar-Cohen Best Paper Award at ITherm 2022.
+This work was recognized with the Prof. Avram Bar-Cohen [Best Paper Award at ITherm 2022](https://www.ieee-itherm.net/2022-best-paper-winners/).
 
 <p align="center">
   <img src="/Image/BPA.jpg" alt="Best Paper Award" width="600">
@@ -26,16 +26,6 @@ For each block, dynamic thermal data is collected under varying power and bounda
 
 **3. Dynamically Assembling the Multi-Block Model**:
 Block-level POD models are combined into a chip-level simulator for the entire chip. At block interfaces, the discontinuous Galerkin (DG) method enforces thermal continuity by balancing temperature and heat flux across boundaries.
-
-
-
-
-
-
-
-
-PODTherm-GP is enabled by the proper orthogonal decomposition (POD), which projects the physical domain of processors onto the POD space represented by a finite set of basis functions (also called POD modes). In addition, the physical principle is also incorporated into PODTherm-GP via the Galerkin projection (GP), which provides a physical guidance to thermal simulations. The results show that PODTherm-GP is able to offer dynamic temperature solutions efficiently and accurately within and beyond training range.  The whole workflow of this approach constitutes the training of PODTherm-GP and its demonstration as shown in the below figure where [Gem5](https://www.gem5.org/) and [McPAT](https://code.google.com/archive/p/mcpat/) are CPU and power simulators, respectively. The detailed information can be found in [ISCAS2022](https://ieeexplore.ieee.org/abstract/document/9937274).
-
 
 PODTherm-GP includes several components and each C++ component can be compiled in its folder by the following  
 ```
