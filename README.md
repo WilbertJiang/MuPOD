@@ -74,11 +74,22 @@ This can be done by navigating to the home folder of PODTherm-GP and running the
  mpirun -n 20 ./Therm_FEM
  ```
 where 20 is the number of processes. 
+
 Or, you can just run the following command to collect data
 ```
 mpirun -n 10 python3 Sol_simu_block.py
 ```
 ## 3. Individual POD Model Training
+To train an individual POD model for each building block, run 
+```
+mpirun -n 10 python3 ComputingAM_flp7.py
+python3 save_podmode.py
+```
+Or, just run 
+```
+./generate_mode.sh
+```
+
 ## 4. Dynamically Assembling
 
 
