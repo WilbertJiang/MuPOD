@@ -29,9 +29,9 @@ Block-level POD models are combined into a chip-level simulator for the entire c
 
 To download and install MuPOD
 ```
-git clone --recursive https://github.com/limbo018/DREAMPlace.git
+git clone --recursive https://github.com/WilbertJiang/MuPOD.git
 ```
-
+# How to Install MuPOD and Use MuPOD Step by Step
 MuPOD includes several components and each C++ component can be compiled in its folder by the following  
 ```
     cd ./src  
