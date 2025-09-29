@@ -27,7 +27,12 @@ For each block, dynamic thermal data is collected under varying power and bounda
 **3. Dynamically Assembling the Multi-Block Model**:
 Block-level POD models are combined into a chip-level simulator for the entire chip. At block interfaces, the discontinuous Galerkin (DG) method enforces thermal continuity by balancing temperature and heat flux across boundaries.
 
-PODTherm-GP includes several components and each C++ component can be compiled in its folder by the following  
+To download and install MuPOD
+```
+git clone --recursive https://github.com/limbo018/DREAMPlace.git
+```
+
+MuPOD includes several components and each C++ component can be compiled in its folder by the following  
 ```
     cd ./src  
     ffc -l dolfin Space.ufl  
